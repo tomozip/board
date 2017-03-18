@@ -1,0 +1,10 @@
+
+  <h2>Edit comments</h2>
+
+
+  <%= form_for @comment do |f| %>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+    <%= f.submit  %>
+    <%= link_to '[戻る]', my_thread_path(@comment.my_thread_id) %>
+  <% end %>
